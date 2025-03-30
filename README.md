@@ -23,7 +23,7 @@ export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
 ### Clone repository:
 ```bash
 git clone https://github.com/SteveDoingStuff/GeoRefHut--.git
-cd GeoRefHut
+cd GeoRefHut--
 ```
 ### Install dependencies:
 Just create a folder 'dependencies' in your working directory and git clone and build those libraries there following their respective instructions.
