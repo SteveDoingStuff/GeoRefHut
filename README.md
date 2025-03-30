@@ -13,11 +13,6 @@ GeoRefHut-- is a C++ project for aligning E57 point clouds via GICP, optimizing 
 - [json](https://github.com/nlohmann/json)
 - Eigen3
 
-## Setup
-Set the following environment variables to point to the respective library directories:
-```bash
-export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
-```
 
 ## Build
 ### Clone repository:
@@ -36,6 +31,11 @@ cmake ..
 make
 ```
 ### Run:
+before running the programm, you might need to:
+```bash
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+```
+run program by:
 ```bash
 ./GeoRefHut
 ```
