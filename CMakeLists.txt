@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_TYPE RELEASE)
 
 # Add the executable
-add_executable(GeoRefHut src/GeoRefHut.cpp dependencies/tinyfiledialogs/tinyfiledialogs.cpp)
+add_executable(GeoRefHut src/GeoRefHut.cpp dependencies/tinyfiledialogs/tinyfiledialogs.c)
 
 # Specify library directories
 set(E57Format_DIR "${CMAKE_SOURCE_DIR}/dependencies/libE57Format")
