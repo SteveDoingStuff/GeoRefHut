@@ -15,7 +15,7 @@ set(Pangolin_DIR "${CMAKE_SOURCE_DIR}/dependencies/Pangolin/build")
 
 # Find required packages
 find_package(Pangolin REQUIRED PATHS ${Pangolin_DIR})
-find_package(small_gicp REQUIRED PATHS "${CMAKE_SOURCE_DIR}/small_gicp")
+find_package(small_gicp REQUIRED PATHS "${CMAKE_SOURCE_DIR}/dependencies/small_gicp")
 find_package(E57Format REQUIRED PATHS ${E57Format_DIR})
 find_package(GLU REQUIRED)
 find_package(g2o REQUIRED PATHS ${g2o_DIR})
