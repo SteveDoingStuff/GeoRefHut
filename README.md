@@ -9,7 +9,7 @@ GeoRefHut-- is a C++ project for aligning E57 point clouds via GICP, optimizing 
 - [small_gicp](https://github.com/SMIT-Lab/small_gicp)
 - [g2o](https://github.com/RainerKuemmerle/g2o)
 - GLU (OpenGL Utility Library)
-- [tinyfiledialogs](https://sourceforge.net/projects/tinyfiledialogs/)
+- [tinyfiledialogs](https://github.com/native-toolkit/libtinyfiledialogs)
 - [json](https://github.com/nlohmann/json)
 - Eigen3
 
