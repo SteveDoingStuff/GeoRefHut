@@ -1,7 +1,7 @@
 # GeoRefHut--
 
 ## Description
-GeoRefHut-- is a C++ project for aligning E57 point clouds via GICP, optimizing the resulting pose graph and georeferencing the aligned point clouds.
+GeoRefHut-- is a C++ project for aligning E57 point clouds via GICP, optimizing the resulting pose graph and georeferencing the aligned point clouds. This project has only been tested on Ubuntu 24.04.2 LTS.
 
 ## Dependencies
 - [libE57Format](https://github.com/libE57/libE57Format)
