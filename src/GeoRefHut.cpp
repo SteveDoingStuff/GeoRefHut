@@ -3610,7 +3610,7 @@ int main() {
     // pangolin::Var<bool> subsample_cloud_button("ui.Subsample cloud", false, false);
     // pangolin::Var<int> subsample_size("ui.Cloud size [kpts]", 500, 1, 10000);
     pangolin::Var<bool> expo_button("ui.Export selected",false, false);
-    pangolin::Var<bool> rel_cov_button("ui.Compute rel covariance",false, false);
+    // pangolin::Var<bool> rel_cov_button("ui.Compute rel covariance",false, false);
     
 
     pangolin::CreatePanel("scan_list")
@@ -3741,20 +3741,20 @@ int main() {
             transformE57(fileEntries);
         }
 
-        if (pangolin::Pushed(rel_cov_button)) {
-            auto stoch_a_priori = std::make_pair(
-                std::stod(trans_string),
-                std::stod(rot_string)
-                // static_cast<double>(trans_sig_var.Get()), 
-                // static_cast<double>(rot_sig_var.Get())
-            );
-            // if (loadedScans)
-            // auto lambda = std::stod(lambda_string.Get());            
-            std::unordered_map<std::string, ICPResult> icpR = ReadICPFromFile("icp_results.json");
-            com_rel_cov = true;
-            computeRelCov(icpR,"optimized_poses.json",stoch_a_priori);
-            com_rel_cov = false;
-        }
+        // if (pangolin::Pushed(rel_cov_button)) {
+        //     auto stoch_a_priori = std::make_pair(
+        //         std::stod(trans_string),
+        //         std::stod(rot_string)
+        //         // static_cast<double>(trans_sig_var.Get()), 
+        //         // static_cast<double>(rot_sig_var.Get())
+        //     );
+        //     // if (loadedScans)
+        //     // auto lambda = std::stod(lambda_string.Get());            
+        //     std::unordered_map<std::string, ICPResult> icpR = ReadICPFromFile("icp_results.json");
+        //     com_rel_cov = true;
+        //     computeRelCov(icpR,"optimized_poses.json",stoch_a_priori);
+        //     com_rel_cov = false;
+        // }
 
         if (pangolin::Pushed(i_button)) {
             int downsample = downsample_var.Get();
