@@ -3590,10 +3590,10 @@ int main() {
     pangolin::Var<bool> save_button("ui.ICP to file",false,false);
     pangolin::Var<bool> hessian_box ("ui.Use hessians", false, true);
     // pangolin::Var<std::string> lambda_string("ui.lambda []", "0.001");
-    pangolin::Var<bool> hessian_diag_box ("ui.Use diagonal hessians", false, true);
-    pangolin::Var<bool> stoch_box ("ui.Use custom errors", false, true);
-    pangolin::Var<std::string> trans_string("ui.Transl err [m]", "0.01");
-    pangolin::Var<std::string> rot_string("ui.Rot err [rad]", "0.001");
+    // pangolin::Var<bool> hessian_diag_box ("ui.Use diagonal hessians", false, true);
+    pangolin::Var<bool> stoch_box ("ui.Use custom stochastics", false, true);
+    pangolin::Var<std::string> trans_string("ui.sigma_t [m]", "0.01");
+    pangolin::Var<std::string> rot_string("ui.sigma_r [rad]", "0.001");
     // pangolin::Var<float> trans_sig_var("ui.Transl err [m]", 0.01f, 0.001f, 10.0f);
     // pangolin::Var<float> rot_sig_var("ui.Rot err [rad]", 0.001f, 0.0001f, 1.0f);
     pangolin::Var<bool> o_button("ui.ICP Optimization",false,false);
@@ -3658,7 +3658,7 @@ int main() {
         
         custom_stoch = stoch_box.Get();
         use_hessian = hessian_box.Get();
-        use_hessian_diag= hessian_diag_box.Get();
+        // use_hessian_diag= hessian_diag_box.Get();
         
         float render_dist = render_dist_var.Get();
         UpdateWindowSize(window_width, window_height, aspect);
