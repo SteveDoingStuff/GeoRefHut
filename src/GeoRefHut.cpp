@@ -1226,7 +1226,7 @@ std::unordered_map<std::string, Eigen::Matrix4d> LoadGlobalPoses(const std::stri
 
 void transformE57(std::vector<FileEntry> fileEntries) {
     try {
-        pangolin::DestroyWindow("GeoRefHut");
+        pangolin::DestroyWindow("GeoRefHut--");
         // std::unordered_map<std::string, ScanData> emptyMap;
         // loadedScans.swap(emptyMap);
 
@@ -3545,7 +3545,7 @@ int main() {
     float aspect = static_cast<float>(window_width) / window_height;
 
     // Create window and setup camera
-    pangolin::CreateWindowAndBind("GeoRefHut", window_width, window_height);
+    pangolin::CreateWindowAndBind("GeoRefHut--", window_width, window_height);
 
 
     glEnable(GL_DEPTH_TEST);
