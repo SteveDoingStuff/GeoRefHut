@@ -639,7 +639,7 @@ Eigen::Matrix4d computeTransformationMatrix(const std::vector<Target> matchedTar
     // Check for sufficient selected points
     if (localPoints.size() < 3) {
         std::cerr << "Insufficient selected points for transformation." << std::endl;
-        std::cout << "Transformation Matrix:\n" << Eigen::Matrix4d::Identity() << std::endl;
+        std::cout << "Transformation Matrix:\n" << Eigen::Matrix4d::Identity() << "\n" << std::endl;
         return Eigen::Matrix4d::Identity();
     }
 
@@ -1306,7 +1306,7 @@ void transformE57(std::vector<FileEntry> fileEntries) {
                     << std::setw(6) << difference(1) << " "
                     << std::setw(6) << difference(2) << " [m] | "
                     << "abs. diff: " << std::setw(6) << absDifference << " [m]"
-                    << std::endl;
+                    << "\n" << std::endl;
         }
         
         Eigen::Matrix4d transformationMatrix = trafoViz(initialTransformationMatrix,matchedTargets);
