@@ -2,7 +2,7 @@
 ![GUI of GeoRefHut](https://github.com/SteveDoingStuff/GeoRefHut--/blob/main/img/GUI.png)
 
 ## Description
-GeoRefHut++S is a C++ project for aligning E57 point clouds via GICP, optimizing the resulting pose graph and georeferencing the aligned point clouds. This project has only been tested on Ubuntu 24.04.2 LTS.
+GeoRefHut++ is a C++ project for aligning E57 point clouds via GICP, optimizing the resulting pose graph and georeferencing the aligned point clouds. This project has only been tested on Ubuntu 24.04.2 LTS.
 
 ## Dependencies
 - [libE57Format](https://github.com/asmaloney/libE57Format)
@@ -18,8 +18,8 @@ GeoRefHut++S is a C++ project for aligning E57 point clouds via GICP, optimizing
 ## Build
 ### Clone repository:
 ```bash
-git clone https://github.com/SteveDoingStuff/GeoRefHut--.git
-cd GeoRefHut--
+git clone https://github.com/SteveDoingStuff/GeoRefHut.git
+cd GeoRefHut
 ```
 ### Install dependencies:
 Just create a folder 'dependencies' in your working directory and git clone and build those libraries there following their respective instructions.
