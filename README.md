@@ -1,4 +1,4 @@
-# GeoRefHut
+# GeoRefHut++
 ![GUI of GeoRefHut](https://github.com/SteveDoingStuff/GeoRefHut--/blob/main/img/GUI.png)
 
 ## Description
